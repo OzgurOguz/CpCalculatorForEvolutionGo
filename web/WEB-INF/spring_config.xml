@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context_annotation="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <context_annotation:config/>
+    <bean id="jsoupAdresses" class="main.java.Rewritable.JsoupAdresses">
+        <property name="pokemon_website_adres" value="http://pokemondb.net/pokedex/"></property>
+        <property name="pokemon_name_html_path" value=".main-content h1"></property>
+        <property name="pokemon_images" value=".figure img"></property>
+        <property name="pokemon_efficiency" value=".span-4 p"></property>
+        <property name="pokemon_efficiency_table" value=".type-table  .type-abbr"></property>
+        <property name="pokemon_coefficiency_table" value=".type-table .type-fx-cell"></property>
+        <property name="pokemon_evoluation" value=".infocard-tall .ent-name"></property>
+    </bean>
+    <bean id="getDataWithJsoup" class="main.java.GetDataWithJsoup"></bean>
+
+
+</beans>
