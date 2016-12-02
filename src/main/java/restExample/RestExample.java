@@ -1,5 +1,6 @@
 package main.java.restExample;
 
+/*
 import main.java.PojoClass.MongoPojo;
 
 import java.util.ArrayList;
@@ -26,4 +27,4 @@ public class RestExample {
 
         return datas;
     }
-}
+}*/
