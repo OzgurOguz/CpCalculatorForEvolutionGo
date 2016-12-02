@@ -13,4 +13,5 @@
         <servlet-name>index</servlet-name>
         <url-pattern>/ServletClass</url-pattern>
     </servlet-mapping>
+
 </web-app>

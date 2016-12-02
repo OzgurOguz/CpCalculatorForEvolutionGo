@@ -1,10 +1,12 @@
 package main.java.MongoDbProcesses;
 
 import com.mongodb.*;
+import main.java.GetDataWithJsoup;
 import org.jsoup.nodes.Element;
 import org.w3c.dom.Document;
 
 import java.io.IOException;
+import java.net.UnknownHostException;
 import java.util.*;
 
 import static com.sun.javaws.CacheUtil.remove;
@@ -14,7 +16,7 @@ import static java.util.Arrays.asList;
 public class MongodbConnect {
 
 
-    public void MongodbConnect() {
+    public void MongodbConnect() throws IOException {
 
         GetDataWithJsoup getDataWithJsoup = new GetDataWithJsoup();
 

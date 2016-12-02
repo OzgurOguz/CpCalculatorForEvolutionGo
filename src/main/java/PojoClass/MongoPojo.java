@@ -10,6 +10,16 @@ public class MongoPojo {
     private String Pokemon_image;
     private String Pokemon_evolation;
 
+    public MongoPojo(){}
+
+    public MongoPojo(String pokemon_coefficiency_table, String pokemon_efficiency_table, String pokemon_effectiveness, String pokemon_image, String pokemon_evolation) {
+        Pokemon_coefficiency_table = pokemon_coefficiency_table;
+        Pokemon_efficiency_table = pokemon_efficiency_table;
+        Pokemon_effectiveness = pokemon_effectiveness;
+        Pokemon_image = pokemon_image;
+        Pokemon_evolation = pokemon_evolation;
+    }
+
     public String getPokemon_coefficiency_table() {
         return Pokemon_coefficiency_table;
     }

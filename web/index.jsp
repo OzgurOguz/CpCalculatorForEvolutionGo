@@ -1,3 +1,4 @@
+<%@ page import="main.java.PojoClass.MongoPojo" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -14,28 +15,30 @@
                 <input type="submit" value="send"/></td>
 
             <td align="right">Pokemon Name:
-                <input type="text" name="pokemon_name_text" value="${pokemon_name}"/>
+                <input type="text" name="pokemon_name_text" value="<%=(request.getAttribute("pokemon_name"))%>">
+"/>
             </td>
 
             <td align="right">Pokemon Coefficiency:
-                <input type="text" name="pokemon_coefficiency_table" value="${pokemon_coefficiency_table}"></td>
+                <input type="text" name="pokemon_coefficiency_table" value="${mongoPojoDatas.Pokemon_coefficiency_table}"></td>
 
             <td align="right">Pokemon Efficiency:
-                <input type="text" name="pokemon_efficiency" value="${pokemon_efficiency_table}"></td>
+                <input type="text" name="pokemon_efficiency" value="${mongoPojoDatas.pokemon_efficiency_table}"></td>
 
             <td align="right">Pokemon Effectiveness:
-                <input type="text" name="pokemon_effectiveness" value="${pokemon_effectivness}"></td>
+                <input type="text" name="pokemon_effectiveness" value="${mongoPojoDatas.pokemon_effectivness}"></td>
 
             <td align="right">Pokemon Image:
-                <input type="text" name="pokemon_image" value="${pokemon_image}"></td>
+                <input type="text" name="pokemon_image" value="${mongoPojoDatas.pokemon_image}"></td>
 
             <td align="right">Pokemon Evoluation:
-                <input type="text" name="pokemon_evolation" value="${pokemon_evoluation}"></td>
+                <input type="text" name="pokemon_evolation" value="${mongoPojoDatas.pokemon_evoluation}"></td>
         </tr>
 
         <td align="right">
             <input type="submit" value="submit">
         </td>
+        ${mongoPojoDatas.thereIsNoProperty}
     </table>
 </form>
 </body>
